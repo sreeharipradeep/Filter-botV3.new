@@ -1,7 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
 from buttons import start_buttons
-
 WELCOME_TEXT = """🍿 Welcome! 🍿
 
 I am the filter bot of the Trixel Movie group 🎬.
