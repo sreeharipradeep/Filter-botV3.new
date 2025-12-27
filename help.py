@@ -1,8 +1,9 @@
 from pyrogram import Client, filters
 
-@Client.on_message(filters.command("help"))
+# /help command handler
+@Client.on_message(filters.command("help") & filters.private)
 async def help_cmd(client, message):
-    await message.reply("""
+    await message.reply_text("""
 📌 Commands
 
 /start - Start bot
