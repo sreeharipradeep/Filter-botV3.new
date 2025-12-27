@@ -8,6 +8,8 @@ app = Client(
     bot_token=BOT_TOKEN
 )
 
-from handlers import start, filter, broadcast, help
-
+import start
+import filter
+import broadcast
+import help
 app.run()
