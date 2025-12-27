@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from filters import add_filter, get_filter
+from filters import add_filter, get_filter  # database folder ഇല്ലാതെ root-level
 
 @Client.on_message(filters.command("filter") & filters.reply)
 async def add_filter_cmd(client, message):
