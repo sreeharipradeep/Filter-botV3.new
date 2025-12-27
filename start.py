@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
-from utils.buttons import start_buttons
+from buttons import start_buttons
 
 WELCOME_TEXT = """🍿 Welcome! 🍿
 
