@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from database.filters import add_filter, get_filter
+from filters import add_filter, get_filter
 
 @Client.on_message(filters.command("filter") & filters.reply)
 async def add_filter_cmd(client, message):
