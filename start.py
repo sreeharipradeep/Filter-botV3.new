@@ -18,7 +18,7 @@ use ചെയ്യാവുന്നതാണ് ☺️
 async def start_cmd(client, message):
     await client.send_photo(
         chat_id=message.chat.id,
-        photo="assets/welcome.jpg",
+        photo="https://graph.org/file/62386b57bf0394d7bd917-959daf5976f788890f.jpg",
         caption=WELCOME_TEXT,
         reply_markup=InlineKeyboardMarkup(start_buttons)
     )
