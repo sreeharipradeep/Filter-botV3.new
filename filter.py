@@ -1,6 +1,7 @@
-from pyrogram import Client, filters
+ from pyrogram import Client, filters
 from filters import add_filter, get_filter  # Root-level filters.py import
 
+# /filter command handler
 @Client.on_message(filters.command("filter") & filters.reply)
 async def add_filter_cmd(client, message):
     if len(message.command) < 2:
@@ -19,6 +20,7 @@ async def add_filter_cmd(client, message):
     add_filter(keyword, file_id)
     await message.reply("✅ Filter added")
 
+# Auto send filtered media in group
 @Client.on_message(filters.text & filters.group)
 async def auto_filter(client, message):
     data = get_filter(message.text.lower())
