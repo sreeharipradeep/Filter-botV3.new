@@ -1,8 +1,8 @@
 import os
 
-API_ID = int(os.environ.get("API_ID", "12345"))
-API_HASH = os.environ.get("API_HASH", "")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-MONGO_URL = os.environ.get("MONGO_URL", "")
+API_ID = int(os.environ.get("API_ID", "36360287"))
+API_HASH = os.environ.get("API_HASH", "4283a743d393b1094600a7065a50b3c0")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8518993193:AAE1OVHCiOka97i9KXC18RNJkIxD0uPe-I8")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://Mreldro:mreldro@cluster0.wdjsw5c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
-ADMINS = [123456789]  # your telegram id
+ADMINS = [8417661273]  # your telegram id
